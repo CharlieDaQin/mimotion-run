@@ -121,8 +121,8 @@ class MiMotion():
                 "redirect_uri": "https://s3-us-west-2.amazonaws.com/hm-registration/successsignin.html",
                 "token": "access",
             }
-            print("user：" & user)
-            print("password：" & password)
+            print("user：",user)
+            print("password：" ,password)
             r1 = requests.post(url=url1, data=data1, headers=headers, allow_redirects=False)
             print(r1)
             location = r1.headers["Location"]
